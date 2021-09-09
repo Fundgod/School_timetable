@@ -1,0 +1,15 @@
+header {
+	width: 100%;
+	top: 0;
+	position: fixed;
+	background-color: #347da8;
+	z-index: 1;
+}
+
+.header-inner {
+	width: 99%;
+	margin: 0.5%;
+	background-color: #3792cb;
+	border-radius: 10px;
+	display:inline-block;
+}
