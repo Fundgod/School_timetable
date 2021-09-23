@@ -25,7 +25,7 @@ def db_session_init(db_file: str):
     engine = sa.create_engine(conn_str)
     __factory = orm.sessionmaker(bind=engine)
 
-    # from models import __all_models
+    from models import __all_models
 
     SqlAlchemyBase.metadata.create_all(engine)
 

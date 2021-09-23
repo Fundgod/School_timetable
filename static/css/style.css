@@ -1,3 +1,5 @@
+/* HEADER */
+
 header {
 	width: 100%;
 	top: 0;
@@ -12,4 +14,60 @@ header {
 	background-color: #3792cb;
 	border-radius: 10px;
 	display:inline-block;
+}
+
+#app-name>h1 {
+	font-weight: 600;
+	margin-top: 5px;
+	margin-left: 30px;
+	font-size: 45px;
+	display:inline-block;
+}
+
+
+/* 404 ERROR PAGE */
+
+#error-404-block {
+	width: 70%;
+	height: 50%;
+	top: 15%;
+	left: 15.2%;
+	border: 3px solid gray;
+	border-radius: 15px;
+	background-color: #347da8;
+	visibility: visible;
+	position: fixed;
+}
+
+#error-404-inner {
+	width: 96%;
+	height: 93%;
+	margin-left: 2%;
+	margin-top: 1.7%;
+	border-radius: 15px;
+	background-color: #ffffff;
+}
+
+#error-404-input {
+	width: 90%;
+    padding: 10px;
+	margin-left: 4%;
+}
+
+#error-404-input>h2 {
+	margin-left: 15px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#error-404-input>h3 {
+	margin-left: 15px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#error-404-input>ol {
+	margin-left: 50px;
+	margin-top: 10px;
+	font-size: 1.4em;
 }

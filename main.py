@@ -17,6 +17,10 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=365)
 # unique_codes_manager = UniqueCodesManager()
 # unique_codes_manager.generate_unique_codes(10)
 
+@app.errorhandler(404)
+def error_404(error):
+    return render_template("404.html")
+
 
 @app.route("/")
 def start_menu():
