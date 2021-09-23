@@ -18,10 +18,9 @@ class User(SqlAlchemyBase, UserMixin, SerializerMixin):
     email = sqlalchemy.Column(sqlalchemy.String)
     password = sqlalchemy.Column(sqlalchemy.String)
 
-    # а b1 и b2 - количество непрочитанных сообщений в этих чатах
 
     # def set_password(self, password):
     #    self.password = generate_password_hash(password)
 
-    # def check_password(self, password):
-    #    return check_password_hash(self.password, password)
+    def check_password(self, password):
+        return check_password_hash(self.password, password)
