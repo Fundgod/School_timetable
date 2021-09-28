@@ -17,9 +17,3 @@ class User(SqlAlchemyBase, UserMixin, SerializerMixin):
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     email = sqlalchemy.Column(sqlalchemy.String)
     password = sqlalchemy.Column(sqlalchemy.String)
-
-    # def set_password(self, password):
-    #    self.password = generate_password_hash(password)
-
-    # def check_password(self, password):
-    #     return

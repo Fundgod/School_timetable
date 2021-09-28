@@ -1,3 +1,54 @@
+/* COMMON */
+
+
+html, body {
+	height: 100%;
+	font-family: Ubuntu, "times new roman", times, roman, serif;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.close-btn {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background: url(/static/img/close_button.png);
+}
+
+.close-btn:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.link-but-not-link {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #000;
+}
+
+.link-but-not-link:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+#main-content {
+	width: 60%;
+	min-height: 100%;
+	margin-left: 20%;
+	border-left: 3px solid gray;
+	border-right: 3px solid gray;
+}
+
+.placeholder {
+	width: 50px;
+	height: 50px;
+	visibility: hidden;
+}
+
+
 /* HEADER */
 
 header {
@@ -22,6 +73,128 @@ header {
 	margin-left: 30px;
 	font-size: 45px;
 	display:inline-block;
+}
+
+.header-btn {
+	width: 10%;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 1.1em;
+	position: absolute;
+}
+
+#go-to-profile-btn {
+	right: 16%;
+	bottom: 25%;
+	color: #ffffff;
+	background-color: #10aa10;
+}
+
+#logout-btn {
+    right: 5%;
+	bottom: 25%;
+	color: #ffffff;
+	background-color: #cc0000;
+}
+
+#logout-btn {
+    width: 200px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 1.1em;
+	position: absolute;
+	right: 5%;
+	bottom: 25%;
+	color: #ffffff;
+	background-color: #cc0000;
+}
+
+
+/* LOGIN/REGISTER PAGES */
+
+#login-form, #register-form {
+	width: 40%;
+	height: 80%;
+	bottom: 0;
+	position: absolute;
+	margin-left: 30%;
+	border: 5px solid #326da6;
+	border-bottom: 0px;
+	overflow: auto;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	background-color: #2585c0;
+}
+
+.form-title {
+	margin-top: 10px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#form-inner {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.form-first-field {
+	margin-top: 20px;
+}
+
+.form-label {
+	margin-top: 5px;
+	text-indent: 20px;
+	font-size: 22px;
+}
+
+.remember-me-block {
+	height: 40px;
+}
+
+.remember-me-label {
+	font-size: 23px;
+	height: 50px;
+}
+
+.remember-me-checkbox {
+	width: 18px;
+	height: 18px;
+}
+
+#submit {
+	width: 100%;
+	height: 20%;
+	margin-bottom: 20px;
+	font-size: 25px;
+	background-color: #30ff30;
+	border: 3px solid #10aa10;
+	border-radius: 20px;
+}
+
+#registered-successfully>h1 {
+	font-weight: 600;
+	font-size: 70px;
+	text-align: center;
+	margin-top: 15%;
+}
+
+#redirect-to-login-page {
+	margin-top: 1%;
+}
+
+#redirect-to-login-page>a>button {
+	font-weight: 600;
+	font-size: 50px;
+	width: 30%;
+	background-color: #30ff30;
+	color: black;
+	margin-left: 35%;
+	border: 3px solid #20aa30;
+	border-radius: 20px;
+}
+
+.simplebar-scrollbar {
+	top: 20px;
 }
 
 

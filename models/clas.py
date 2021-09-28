@@ -9,7 +9,7 @@ sys.path.append("..")
 from db_session import SqlAlchemyBase, create_session
 
 
-class clas(SqlAlchemyBase):
+class Clas(SqlAlchemyBase):
     __tablename__ = "clas"
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)

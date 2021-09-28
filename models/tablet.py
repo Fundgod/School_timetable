@@ -9,8 +9,8 @@ sys.path.append("..")
 from db_session import SqlAlchemyBase, create_session
 
 
-class clas(SqlAlchemyBase):
-    __tablename__ = "clas"
+class Tablet(SqlAlchemyBase):
+    __tablename__ = "Menu"
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     name = sqlalchemy.Column(sqlalchemy.String)

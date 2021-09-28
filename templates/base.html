@@ -13,11 +13,15 @@
 </head>
 <body>
     <header>
-        <dev class="header-inner">
+        <div class="header-inner">
             <div id="app-name">
                 <h1>Расписание -> потом будет остальное</h1>
+                {% if current_user.is_authenticated %}
+					<button onclick="location.href='/profile';" class="inline btn header-btn" id="go-to-profile-btn">Профиль</button>
+					<button onclick="location.href='/logout';" class="inline btn header-btn" id="logout-btn">Выйти из профиля</button>
+				{% endif %}
             </div>
-        </dev>
+        </div>
     </header>
     {% block content %}{% endblock %}
 </body>
