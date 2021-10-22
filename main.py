@@ -2,7 +2,7 @@ from flask import Flask, request, redirect, render_template
 from flask_login import LoginManager, login_user, login_required, current_user, logout_user
 from datetime import timedelta
 
-from utils import get_user_by_email, add_user
+from utils import get_user_by_email, add_user, create_new_menu, delete_menu_util, get_all_info_to_main
 
 from forms import *
 from db_session import db_session_init, create_session
@@ -20,8 +20,8 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
-@login_required
 @app.route("/logout")
+@login_required
 def logout():
     logout_user()
     return redirect("/login")
@@ -42,6 +42,29 @@ def start_menu():
     return render_template("base.html")
 
 
+@app.route("/main")
+@login_required
+def main_menu():
+    tablets = get_all_info_to_main()
+    print(tablets)
+    return render_template("main.html")
+
+
+@app.route("/js/add_menu", methods=['GET'])
+@login_required
+def add_menu():
+    temp_id = create_new_menu()
+    return str(temp_id)
+
+
+@app.route("/js/delete_menu/<menu_id>", methods=['GET'])
+@login_required
+def delete_menu(menu_id):
+    if delete_menu_util(menu_id):
+        return 'Yes'
+    return 'No'
+
+
 @app.route("/login", methods=["GET", "POST"])
 def authorization():
     form = LoginForm()
@@ -54,7 +77,7 @@ def authorization():
     return render_template("login.html", form=form)
 
 
-@app.route("/register/", methods=["GET", "POST"])
+@app.route("/register", methods=["GET", "POST"])
 def registration():
     form = RegisterForm()
     if form.validate_on_submit():

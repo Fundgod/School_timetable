@@ -5,47 +5,12 @@ html, body {
 	height: 100%;
 	font-family: Ubuntu, "times new roman", times, roman, serif;
 }
+body{
+    background-color: #212529;
+}
 
 .inline {
 	display: inline-block;
-}
-
-.close-btn {
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	background: url(/static/img/close_button.png);
-}
-
-.close-btn:hover {
-	opacity: 0.8;
-	cursor: pointer;
-}
-
-.link-but-not-link {
-	width: 100%;
-	height: 100%;
-	text-decoration: none;
-	color: #000;
-}
-
-.link-but-not-link:hover {
-	text-decoration: none;
-	color: #000;
-}
-
-#main-content {
-	width: 60%;
-	min-height: 100%;
-	margin-left: 20%;
-	border-left: 3px solid gray;
-	border-right: 3px solid gray;
-}
-
-.placeholder {
-	width: 50px;
-	height: 50px;
-	visibility: hidden;
 }
 
 
@@ -64,7 +29,17 @@ header {
 	margin: 0.5%;
 	background-color: #3792cb;
 	border-radius: 10px;
-	display:inline-block;
+	display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-item-5{
+    flex-grow: 5;
+}
+
+.flex-item-3{
+    flex-grow: 3;
 }
 
 #app-name>h1 {
@@ -72,10 +47,11 @@ header {
 	margin-top: 5px;
 	margin-left: 30px;
 	font-size: 45px;
-	display:inline-block;
+	color: white;
 }
 
 .header-btn {
+    margin-top: 15px;
 	width: 10%;
 	height: 40px;
 	border-radius: 20px;
@@ -83,31 +59,53 @@ header {
 	position: absolute;
 }
 
-#go-to-profile-btn {
-	right: 16%;
-	bottom: 25%;
+#go-to-login-btn{
+    color: #ffffff;
+    background-color: black;
+}
+
+#go-to-register-btn{
+    color: #ffffff;
+    background-color: #0000ff;
+}
+
+#go-to-main-btn {
 	color: #ffffff;
 	background-color: #10aa10;
 }
 
 #logout-btn {
-    right: 5%;
-	bottom: 25%;
+	font-size: 1.1em;
 	color: #ffffff;
 	background-color: #cc0000;
 }
 
-#logout-btn {
-    width: 200px;
-	height: 40px;
-	border-radius: 20px;
-	font-size: 1.1em;
-	position: absolute;
-	right: 5%;
-	bottom: 25%;
-	color: #ffffff;
-	background-color: #cc0000;
+
+/* MAIN MENU */
+
+.add-new-div{
+    margin-top: 200px;
 }
+#add-new-btn{
+    width: 100px;
+    height: 100px;
+    color: #ff0000;
+    background-color: #ffff33;
+}
+
+.menu{
+    color: white;
+    background-color: green;
+}
+
+/*
+#menu_60{
+    width: 600px;
+    height: 100px;
+    color: gray;
+    background-color: white;
+    border-radius: 15px;
+} */
 
 
 /* LOGIN/REGISTER PAGES */
@@ -172,8 +170,8 @@ header {
 }
 
 #registered-successfully>h1 {
-	font-weight: 600;
-	font-size: 70px;
+	font-weight: 500;
+	font-size: 50px;
 	text-align: center;
 	margin-top: 15%;
 }
@@ -183,9 +181,9 @@ header {
 }
 
 #redirect-to-login-page>a>button {
-	font-weight: 600;
-	font-size: 50px;
-	width: 30%;
+	font-weight: 500;
+	font-size: 40px;
+	width: 25%;
 	background-color: #30ff30;
 	color: black;
 	margin-left: 35%;

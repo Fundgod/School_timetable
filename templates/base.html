@@ -14,15 +14,21 @@
 <body>
     <header>
         <div class="header-inner">
-            <div id="app-name">
-                <h1>Расписание -> потом будет остальное</h1>
+            <div class="flex-item-5" id="app-name">
+                <h1>Тут есть текст</h1>
+            </div>
                 {% if current_user.is_authenticated %}
-					<button onclick="location.href='/profile';" class="inline btn header-btn" id="go-to-profile-btn">Профиль</button>
-					<button onclick="location.href='/logout';" class="inline btn header-btn" id="logout-btn">Выйти из профиля</button>
+					<div class="flex-item-3"><button onclick="location.href='/main';" class="inline btn header-btn" id="go-to-main-btn">Главная страница</button></div>
+					<div class="flex-item-3"><button onclick="location.href='/logout';" class="inline btn header-btn" id="logout-btn">Выйти из профиля</button></div>
 				{% endif %}
+                {% if not current_user.is_authenticated %}
+                    <div class="flex-item-3"><button onclick="location.href='/login';" class="inline btn header-btn" id="go-to-login-btn">Логин</button></div>
+                    <div class="flex-item-3"><button onclick="location.href='/register';" class="inline btn header-btn" id="go-to-register-btn">Регистрация</button></div>
+                {% endif %}
             </div>
         </div>
     </header>
     {% block content %}{% endblock %}
 </body>
+{% block scripts %} {% endblock %}
 </html>

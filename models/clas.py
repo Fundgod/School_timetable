@@ -14,7 +14,12 @@ class Clas(SqlAlchemyBase):
 
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     name = sqlalchemy.Column(sqlalchemy.String)
-    lessons = sqlalchemy.Column(sqlalchemy.String)
+    day_1 = sqlalchemy.Column(sqlalchemy.String)
+    day_2 = sqlalchemy.Column(sqlalchemy.String)
+    day_3 = sqlalchemy.Column(sqlalchemy.String)
+    day_4 = sqlalchemy.Column(sqlalchemy.String)
+    day_5 = sqlalchemy.Column(sqlalchemy.String)
+    day_6 = sqlalchemy.Column(sqlalchemy.String)
     # Надо сделать функцию для записи и прочтения уроков
 
     """def get_members(self, session: Optional[Session] = None) -> List[User]:
