@@ -4,6 +4,7 @@
 html, body {
 	height: 100%;
 	font-family: Ubuntu, "times new roman", times, roman, serif;
+	color: white;
 }
 body{
     background-color: #212529;
@@ -20,6 +21,7 @@ header {
 	width: 100%;
 	top: 0;
 	position: fixed;
+	height: 90px;
 	background-color: #347da8;
 	z-index: 1;
 }
@@ -38,10 +40,6 @@ header {
     flex-grow: 5;
 }
 
-.flex-item-3{
-    flex-grow: 3;
-}
-
 #app-name>h1 {
 	font-weight: 600;
 	margin-top: 5px;
@@ -50,151 +48,9 @@ header {
 	color: white;
 }
 
-.header-btn {
-    margin-top: 15px;
-	width: 10%;
-	height: 40px;
-	border-radius: 20px;
-	font-size: 1.1em;
-	position: absolute;
+.block{
+    padding-top: 90px;
 }
-
-#go-to-login-btn{
-    color: #ffffff;
-    background-color: black;
-}
-
-#go-to-register-btn{
-    color: #ffffff;
-    background-color: #0000ff;
-}
-
-#go-to-main-btn {
-	color: #ffffff;
-	background-color: #10aa10;
-}
-
-#logout-btn {
-	font-size: 1.1em;
-	color: #ffffff;
-	background-color: #cc0000;
-}
-
-
-/* MAIN MENU */
-
-.add-new-div{
-    margin-top: 200px;
-}
-#add-new-btn{
-    width: 100px;
-    height: 100px;
-    color: #ff0000;
-    background-color: #ffff33;
-}
-
-.menu{
-    color: white;
-    background-color: green;
-}
-
-/*
-#menu_60{
-    width: 600px;
-    height: 100px;
-    color: gray;
-    background-color: white;
-    border-radius: 15px;
-} */
-
-
-/* LOGIN/REGISTER PAGES */
-
-#login-form, #register-form {
-	width: 40%;
-	height: 80%;
-	bottom: 0;
-	position: absolute;
-	margin-left: 30%;
-	border: 5px solid #326da6;
-	border-bottom: 0px;
-	overflow: auto;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-	background-color: #2585c0;
-}
-
-.form-title {
-	margin-top: 10px;
-	font-weight: 600;
-	text-align: center;
-}
-
-#form-inner {
-	width: 60%;
-	margin-left: 20%;
-}
-
-.form-first-field {
-	margin-top: 20px;
-}
-
-.form-label {
-	margin-top: 5px;
-	text-indent: 20px;
-	font-size: 22px;
-}
-
-.remember-me-block {
-	height: 40px;
-}
-
-.remember-me-label {
-	font-size: 23px;
-	height: 50px;
-}
-
-.remember-me-checkbox {
-	width: 18px;
-	height: 18px;
-}
-
-#submit {
-	width: 100%;
-	height: 20%;
-	margin-bottom: 20px;
-	font-size: 25px;
-	background-color: #30ff30;
-	border: 3px solid #10aa10;
-	border-radius: 20px;
-}
-
-#registered-successfully>h1 {
-	font-weight: 500;
-	font-size: 50px;
-	text-align: center;
-	margin-top: 15%;
-}
-
-#redirect-to-login-page {
-	margin-top: 1%;
-}
-
-#redirect-to-login-page>a>button {
-	font-weight: 500;
-	font-size: 40px;
-	width: 25%;
-	background-color: #30ff30;
-	color: black;
-	margin-left: 35%;
-	border: 3px solid #20aa30;
-	border-radius: 20px;
-}
-
-.simplebar-scrollbar {
-	top: 20px;
-}
-
 
 /* 404 ERROR PAGE */
 
